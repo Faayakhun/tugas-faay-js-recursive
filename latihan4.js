@@ -6,4 +6,4 @@ function range(n) {
     }
 }
 
-console.log(range(15))
+console.log(range(18))
