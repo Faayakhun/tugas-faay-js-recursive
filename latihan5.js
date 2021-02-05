@@ -1,15 +1,17 @@
 let printNtimes = []
 
 function manyTimes (times,number) {
+    let printNtimes = []
     var numtostring = number.toString();
     if (times <= 0) {
-        return null;
+        return [];
     }
-    else {
+    else { 
+        printNtimes = manyTimes(times-1,number)
         printNtimes.push(numtostring);
-        manyTimes(times-1,numtostring);
         return printNtimes
     }
 }
 
-console.log(manyTimes(2,3))
+console.log(manyTimes(4,3))
+console.log(manyTimes(7,5))
