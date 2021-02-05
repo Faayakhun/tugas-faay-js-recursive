@@ -1,5 +1,3 @@
-let printNtimes = []
-
 function manyTimes (times,number) {
     let printNtimes = []
     var numtostring = number.toString();
